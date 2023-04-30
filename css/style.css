@@ -9,18 +9,20 @@ html {
 	height: 100% !important;
 }
 
-.hide{
+.hide {
 	display: none;
-	
+
 }
-a{
-	color:#fff
+
+a {
+	color: #fff
 }
+
 h2 {
 	font-family: 'Montserrat', sans-serif;
 	margin: 0 0 20px 0;
 	font-weight: 700;
-	font-size: 32px;
+	font-size: 4vh;
 	color: #333;
 }
 
@@ -46,20 +48,20 @@ p {
 	font-size: 15px;
 }
 
-p.intro {
+p .intro {
 	margin: 12px 0 0;
 	line-height: 24px;
 }
 
 a {
-	color: #1f386e;
+	color: #fff;
 	font-weight: 400;
 }
 
 a:hover,
 a:focus {
 	text-decoration: none;
-	color: #e52f3c;
+	color: #fff;
 }
 
 ul,
@@ -240,7 +242,7 @@ a:focus,
 
 video.vid-bnr {
 	width: 100%;
-	
+
 }
 
 .intro .overlay {
@@ -302,7 +304,7 @@ header .intro-text {
 
 /* About Section */
 #about {
-	padding: 110px 0;	
+	padding: 110px 0;
 	background: #f6f6f6;
 }
 
@@ -345,10 +347,10 @@ header .intro-text {
 }
 
 #about img {
-	padding: 20px;	
+	padding: 20px;
 	width: 500px;
 	margin-top: 10px;
-	background: #fff;	
+	background: #fff;
 	border-right: 5;
 	box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
 }
@@ -361,11 +363,11 @@ header .intro-text {
 
 /* Services Section */
 #services {
-	padding: 100px 0;
+	/* padding: 100px 0; */
 }
 
 #services .service-media {
-	margin: 10px;
+	/* margin: 10px; */
 
 }
 
@@ -375,6 +377,7 @@ header .intro-text {
 	width: 300px;
 	height: 200px;
 }
+
 #services .service-media img {
 	position: relative;
 	display: block;
@@ -399,121 +402,48 @@ header .intro-text {
 	margin-left: 0;
 }
 
- #services .service-desc button {
+#services .service-desc button {
 	border-radius: 14px;
 	border: white;
 	color: rgb(249, 247, 247);
-	background-color:rgb(230, 46, 46);
+	background-color: rgb(230, 46, 46);
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	box-shadow: #211e1e;
 	transition: all 0.3s;
 	text-transform: uppercase;
 	text-shadow: #211e1e;
 
-} 
+}
 
 
 #services .service-desc button:hover {
-	border-radius: 6px;
-	color:white;
-	background-color:rgb(0, 34, 255);
+	border-radius: 21px;
+	color: white;
+	background-color: rgb(0, 34, 255);
 
 }
 
 .service-desc button {
-    height: 54px;
-    width: 176px;
-    text-align: center;
+	height: 40px;
+	width: 165px;
+	text-align: center;
+	color: #fff;
 }
-	
-#more {display: none;}
 
-.btn-border{
+#more {
+	display: none;
+}
+
+.btn-border {
 	padding: 2px;
 	border: #135af1 1px solid;
 	width: 120px;
 	border-radius: 10%;
 	text-align: center;
 	justify-content: center;
-	color: blue;
+	color:white;
 
 }
-/*  Omaxe City-1 */
-#myBtn{
-	cursor: pointer;
-	color: #cc0033;
-}
-#myBtn:hover{
-	color: #135af1;
-    
-}
-/*  Omaxe City-2 */
-#myBtn1{
-	cursor: pointer;
-	color: #cc0033;
-	
-}
-#myBtn1:hover{
-	color: #135af1;
-}
-/*  Omaxe City-hills */
- #myBtn2{
-	cursor: pointer;
-	color: #cc0033;
-	
-}
-#myBtn2:hover{
-	color: #135af1;
-}
-/*  Omaxe City-Ratlam */
-#myBtn3{
-	cursor: pointer;
-	color: #cc0033;
-	
-}
-#myBtn3:hover{
-	color: #135af1;
-}
-
-/*  Vistara City-1 */
-#myBtn4{
-	cursor: pointer;
-	color: #cc0033;
-	
-}
-#myBtn4:hover{
-	color: #135af1;
-}
-/*  Vistara City-2*/
-#myBtn5{
-	cursor: pointer;
-	color: #cc0033;
-	
-}
-#myBtn5:hover{
-	color: #135af1;
-}
-
-/*  Vistara Hills*/
-#myBtn6{
-	cursor: pointer;
-	color: #cc0033;
-	
-}
-#myBtn6:hover{
-	color: #135af1;
-}
-
-/*  Omaxe City-Ratlam*/
-#myBtn7{
-	cursor: pointer;
-	color: #cc0033;
-	
-}
-#myBtn7:hover{
-	color: #135af1;
-}
-
 
 /* Portfolio Section */
 #portfolio {
@@ -642,7 +572,7 @@ header .intro-text {
 }
 
 #contact form {
-	padding-top: 20px;
+	/* padding-top: 20px; */
 	margin-left: 20px;
 }
 
@@ -657,7 +587,7 @@ header .intro-text {
 }
 
 #contact .btn-custom {
-	margin: 30px 0;
+	/* margin: 30px 0; */
 	background: transparent;
 	border: 2px solid #fff;
 }
@@ -691,7 +621,12 @@ label {
 	-o-transition: none;
 	transition: none;
 }
-
+#contact input{
+	border-radius: 10px;
+}
+#contact .form-control{
+	border-radius: 10px;
+}
 #contact .form-control:focus {
 	border-color: #999;
 	outline: 0;
@@ -750,7 +685,7 @@ label {
 /* Footer Section*/
 #footer {
 	background: #f6f6f6;
-	padding: 30px 0;
+	/* padding: 30px 0; */
 	border-radius: 10px;
 }
 
@@ -772,10 +707,84 @@ label {
 		margin: 50px 0;
 	}
 }
-@media screen and (max-width:600px)
-{
-	h1{
+
+@media screen and (max-width:700px) and (min-width:200px) {
+	.row {
+		width: 100%;
+		z-index: 2432;
+	}
+
+	.intro {
+		margin-top: 3%;
+		height: 50vh;
+	}
+
+	.intro video {
+		height: 50vh;
+	}
+
+	.jarallax-img {
+		height: 50vh !important;
+
+	}
+#about{
+	padding: 0%;
+}
+	#get-touch {
+		background-color: #135af1;
+	}
+
+	#get-touch .container {
+		background-color: #135af1;
+		
+	}
+
+	.intro h1 {
+		margin-top: -80%;
+		font-size: 2vh;
+	}
+
+	a.container>.navbar-header,
+	.container-fluid>.navbar-header,
+	.container>.navbar-collapse,
+	.container-fluid>.navbar-collapse {
+		margin: 0%;
+	}
+
+	.intro a {
+		background-color: #135af1;
+		width: 33%;
+		padding: 0%;
+		margin-top: -10% !important;
+		height: 4vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: 30% !important;
+		color: white;
+		border-radius: 14px;
+		margin: 0%;
+	}
+
+	.intro p {
+		font-size: 15px;
+		line-height: normal;
+	}
+
+	.vid-bnr {padding-bottom: 0%;}
+
+	h1 {
 		font-size: 36px;
 		line-height: 50px;
+	}
+
+	p .intro {
+		width: 100%;
+
+	}
+
+	.intro {
+		width: 100%;
+		height: auto;
 	}
 }
